@@ -10,7 +10,7 @@ from keras.models import load_model
 # gpu = (tf.config.list_physical_devices('GPU'))
 # print("GPU is available", gpu)
 
-
+# uploaded to github
 file_path = 'shakespeare.txt'
 text = open(file_path,'r').read()
 vocab = sorted(set(text))
@@ -76,3 +76,5 @@ def generate_text(model,start_seed,gen_size=500,temp=1.0):
     return (start_seed + "".join(text_generated))
 
 print(generate_text(model,"JULIET",gen_size=1000))
+
+
